@@ -49,7 +49,7 @@
             <div class="children">
               <ul>
                 <li class="product">
-                  <a href target="_blank">
+                  <a href onclick="alert('这只是样式哦，试一下手机的吧')">
                     <div class="pro-img">
                       <img src="/imgs/nav-img/nav-3-1.jpg" alt />
                     </div>
@@ -58,7 +58,7 @@
                   </a>
                 </li>
                 <li class="product">
-                  <a href target="_blank">
+                  <a href onclick="alert('这只是样式哦，试一下手机的吧')">
                     <div class="pro-img">
                       <img src="/imgs/nav-img/nav-3-2.jpg" alt />
                     </div>
@@ -67,7 +67,7 @@
                   </a>
                 </li>
                 <li class="product">
-                  <a href target="_blank">
+                  <a href onclick="alert('这只是样式哦，试一下手机的吧')">
                     <div class="pro-img">
                       <img src="/imgs/nav-img/nav-3-3.png" alt />
                     </div>
@@ -76,7 +76,7 @@
                   </a>
                 </li>
                 <li class="product">
-                  <a href target="_blank">
+                  <a href onclick="alert('这只是样式哦，试一下手机的吧')">
                     <div class="pro-img">
                       <img src="/imgs/nav-img/nav-3-4.jpg" alt />
                     </div>
@@ -85,7 +85,7 @@
                   </a>
                 </li>
                 <li class="product">
-                  <a href target="_blank">
+                  <a href onclick="alert('这只是样式哦，试一下手机的吧')">
                     <div class="pro-img">
                       <img src="/imgs/nav-img/nav-3-5.jpg" alt />
                     </div>
@@ -94,7 +94,7 @@
                   </a>
                 </li>
                 <li class="product">
-                  <a href target="_blank">
+                  <a href onclick="alert('这只是样式哦，试一下手机的吧')">
                     <div class="pro-img">
                       <img src="/imgs/nav-img/nav-3-6.png" alt />
                     </div>
