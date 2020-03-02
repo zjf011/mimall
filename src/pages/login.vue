@@ -29,6 +29,9 @@
               <span>|</span>忘记密码？
             </div>
           </div>
+          <div>
+            账号为haqiu，密码123456，如果有需要可以在login.vue中register()进行账号设置
+          </div>
         </div>
       </div>
     </div>
@@ -51,7 +54,9 @@
   </div>
 </template>
 <script>
-import { mapActions } from 'vuex'
+import { mapActions } from "vuex";
+import { Message } from "element-ui";
+import "element-ui/lib/theme-chalk/index.css";
 export default {
   name: "login",
   data() {
@@ -70,7 +75,7 @@ export default {
           password
         })
         .then(res => {
-          this.$cookie.set("userId", res.data.id, 1);
+          this.$cookie.set("userId", res.data.id, {expires:'Session'});
           // console.log("------------------------------");
           // console.log(this.$cookie.get("userId"));
 
@@ -78,10 +83,15 @@ export default {
           //this.$store.dispatch('saveUserName',res.data.username);
           //使用mapAction简写使用
           this.saveUserName(res.data.username);
-          this.$router.push("/index");
+          this.$router.push({
+            name: "index",
+            params: {
+              from: "login"
+            }
+          });
         });
     },
-    ...mapActions(['saveUserName']),
+    ...mapActions(["saveUserName", "savecartCount"]),
     register() {
       this.axios
         .post("/user/register", {
@@ -90,7 +100,7 @@ export default {
           email: "haqiu@163.com"
         })
         .then(() => {
-          alert("注册成功");
+          Message.success("注册成功");
         });
     }
   }

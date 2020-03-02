@@ -249,7 +249,7 @@ export default {
         selected:true,
       }).then((res)=>{
         this.showModal=true;  
-        console.log(res);
+        
         this.$store.dispatch('savecartCount',res.data.cartTotalQuantity);     
       }).catch(()=>{
         this.showModal=true;

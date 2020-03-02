@@ -37,14 +37,18 @@ export default {
     justify-content: space-between;
   }
   .title { 
-    font-size: 24px;
+    
     width:950px;
     padding-left: 50px;
+    h2{
+      font-size: 28px;
+      color:#333333;
+    }
     span {
       font-size: 12px;
       margin-left: 17px;
       color: #999999;
-      font-weight: bold;
+      font-weight: 400;
     }
   }
   .title,
